@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Landing Page Design</title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle">3</div>
+            <header>
+                <a href="#"><img src="logo.png" class="logo"> </a> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="menu.jpeg">Menu</a></li>
+                    <li><a href="https://stories.starbucks.com/stories/blog/">Blog</a></li>
+                    <li><a href="https://www.starbucks.in/about-us.html">About</a></li>
+                    <li><a href="https://rewards.starbucks.in/home">Rewards</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <p>Caramel ribbon meets coffee, milk and ice for a rendezvous in <br>
+                    the blender,while whipped cream and buttery caramel sauce <br>
+                    layer the love on top.To change things up, try it affogato-style <br>
+                    with a hot espresso shot poured right over the top.</p>
+                    <a href="https://www.britannica.com/topic/Starbucks">Learn more</a>
+            </div>
+                <img src="img1.png"  height="600px" width="400px" class="Starbucks">
+            <div> 
+        
+            <ul class="thumb">
+                <li><img src="img1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+                <li><img src="img2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="img3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+            </ul>    
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.instagram.com/starbucks/?hl=en"><img src="instagram.png"></a></li>
+                <li><a href="https://mobile.twitter.com/starbucksindia?lang=en"><img src="twitter.png"></a></li>
+                <li><a href="https://m.facebook.com/Starbucks/"><img src="facebook.png"></a></li>
+            </ul>
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider(anything)
+            {
+                document.querySelector('.starbucks').src=anything;
+            }
+            function changeCircleColor(color)
+            {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </body>
+</html>
